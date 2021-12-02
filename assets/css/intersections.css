@@ -73,9 +73,11 @@ a {
 
 /* header */
 .container {
-	margin: 0 auto;
-	max-width: 940px;
-	display: flex;
+  margin: 0 auto;
+  max-width: 940px;
+
+  min-height: 70px;
+  display: flex;
   justify-content: space-between;
   align-items: center;
 
@@ -83,9 +85,6 @@ a {
 }
 
 .nav {
-	display: flex; 
-	justify-content: flex-start;
-
   font-size: 16px;
   line-height: 20px;
 
@@ -93,12 +92,14 @@ a {
 }
 
 .nav__list {
-	
-  list-style: none;
+  min-width: 480px;
   display: flex;
+  justify-content: space-around;
+
+  padding-left: 0px;
+  list-style: none;
 }
 
-.nav__item,
 .header__login {
   margin-right: 20px;
 }

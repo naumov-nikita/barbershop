@@ -1,11 +1,13 @@
 body {
   background-color: #000;
-  background-image: url(image/Layer.jpg);
+  background-image: url(../assets/image/Layer.jpg);
   background-position: top centre;
   background-repeat: no-repeat;
 }
 
 .logo-box {
+  padding-top: 60px;
+  padding-bottom: 60px;
   display: flex;
 }
 
@@ -14,6 +16,10 @@ body {
 }
 
 .index-column {
+	display: flex;
+	max-width: 940px;
+	margin: 60px auto;
+
   color: #000;
   background-color: #f8f5f2;
 }
@@ -21,6 +27,12 @@ body {
 .index-column h2 {
   font-size: 30px;
   line-height: 42px;
+}
+
+/* Features */
+.features {
+  margin: 0 auto;
+  max-width: 940px;
 }
 
 .features__list {
@@ -31,7 +43,8 @@ body {
 }
 .features__item {
   text-align: center;
-  width: 33%;
+	min-width: 280px;
+  
   margin: 0 15px;
 }
 .features__title {
@@ -39,17 +52,43 @@ body {
   line-height: 42px;
 }
 
+/*news  */
+.section-box {
+min-width: 470px;
+min-height: 420px;
+
+padding-left: 90px;
+}
+
 .news__list {
   list-style: none;
+	padding: 0px;
 }
 
 .news__time {
   text-transform: none;
 }
 
+/* gallery */
+
 .gallery__container {
+	width: 300px;
+	height: 178px;
+	margin: 0px;
   background-color: #ccc;
   border: 7px solid #fff;
+}
+
+.gallery__image {
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: cover;
+}
+
+.form__form {
+	display: flex;
+
+	flex-wrap: wrap;
 }
 
 .form__input {
@@ -58,14 +97,23 @@ body {
   border: 2px solid #000;
 }
 
+.form__form button {
+	flex-grow: 1;
+} 
+
+.form__item {
+	
+}
+
 .form__input:focus {
   border-color: #663d15;
 }
 
 .modal {
   color: #000;
-
   background-color: #f8f3f0;
+
+	display: none;
 }
 
 .modal__title {
@@ -103,5 +151,5 @@ body {
 }
 
 .modal-map__map-img {
-	object-fit: cover;
+  object-fit: cover;
 }
