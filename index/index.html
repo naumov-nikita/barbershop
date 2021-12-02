@@ -4,15 +4,20 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="normalize.css">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../assets/css/normalize.css">
+	<link rel="stylesheet" href="../assets/css/intersections.css">
+	<link rel="stylesheet" href="index.css">
 	<title>Barbershop</title>
-</head>
+	<!-- <style>
+		body {
+			background: url('barbershop-index.jpg') 50% 0 no-repeat;
+			z-index: 100;
+					}
+	</style> -->
+</head> 
 <body>
 
 	<header class="header">
-		
-		
 		<div class="container">
 			<nav class="nav">
 			<ul class="nav__list">
@@ -23,17 +28,17 @@
 					<li class="nav__item"><a href="#" class="nav__link">контакты</a></li>
 				</ul>
 			</nav>
-			<a href="login.html" class="header__login">вход</a>
+			<a href="login.html" class="header__login button">вход</a>
 	</div>
 	<figure class="logo-box">
-	<img src="/svg/index-logo.svg" width="500px" alt="барбершоп «бородинский»" class="header__logo">
+	<img src="../assets/svg/index-logo.svg" width="500px" alt="барбершоп «бородинский»" class="header__logo">
 </figure>
 	</header>
+
 	<main class="main">
 
 		<h1 class="visually-hidden">Барбершоп «Бородинский»</h1>
 
-	
 		<section class="features">
 			<h2 class="visually-hidden">Приемущества</h2>
 			<ul class="features__list">
@@ -69,14 +74,14 @@
 							<time datetime="2022-01-18" class="news__time">18 января</time>
 						</li>
 					</ul>
-					<a href="news.html" class="news__link">все новости</a>
+					<a href="news.html" class="news__link button">все новости</a>
 				</section>
 
 				<section class="gallery">
 					<h2 class="gallery__title">фотогалерея</h2>
-					<figure class="gallery__container"><img src="/image/gallery.jpg" width="328px"	height="164px" alt="помещение с двумя креслами для стрижки" class="gallery__image"></figure>
-					<button type="button" class="gallery__prev">назад</button>
-					<button type="button" class="gallery__next">вперед</button>
+					<figure class="gallery__container"><img src="../assets/image/gallery.jpg" width="328px"	height="164px" alt="помещение с двумя креслами для стрижки" class="gallery__image"></figure>
+					<button  type="button" class="gallery__prev button">назад</button>
+					<button type="button" class="gallery__next button">вперед</button>
 				</section>
 			</div>
 
@@ -90,8 +95,8 @@
 						ПН—ПТ: С 10:00 ДО 22:00 <br>
 						СБ—ВС: С 10:00 ДО 19:00
 					</p>
-					<a href="map.html" class="contact__link">как проехать</a>
-					<a href="contacts.html" class="contact__link">обратная связь</a>
+					<a href="map.html" class="contact__link button">как проехать</a>
+					<a href="contacts.html" class="contact__link button">обратная связь</a>
 				</section>
 
 				<section class="form">
@@ -111,51 +116,21 @@
 						<p class="form__item">
 							<label for="tel" class="form__lable">телефон</label> <input id="tel" type="tel" class="form__input" name="tel" value="" placeholder="8-943-245-24-52">
 						</p>
-						<button type="submit" class="form__botton">отправить</button>
+						<button type="submit" class="button">отправить</button>
 					</form>
 					
 				</section>
 			</div>
 
 			
-			<section class="map">
-				<h2>как до нас добраться</h2>
-	
-					<p><img src="/image/map.jpeg" alt="Офис по адрему ул. Садовая 146 " width="780" height="560"></p>
-	
-				<button type="button">закрыть</button>
-	
-			</section>
-
-			<section class="login">
-				<h2>Личный кабинет</h2>
-				<p>введите свой логин и пароль</p>
-				<form action="https://echo.htmlacademy.ru" method="post">
-					<p>
-						<label for="user-email">лоигн</label>
-						<input id="user-email" name="login" type="email" placeholder="email@test.com">
-					</p>
-					<p>
-						<label for="user-passsword">пароль</label>
-						<input id="user-passsword" name="password" type="password" placeholder="*******">
-					</p>
-					<p>
-						<input id="rememder-pas" type="checkbox" name="remember">
-						<label for="rememder-pas">Запоните меня</label>
-						<a href="lost-password.html">забыл пароль!</a>
-					</p> 
-					<button type="submit">войти</button>
-				</form>
-				<button type="button">закрыть</button>
-			</section>
-
+			
 	</main>
 	<footer class="footer">
 		
 		<p class="footer__info">
 			БАРБЕРШОП «БОРОДИНСКИЙ»<br>
 			АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
-			<a href="map.html">КАК НАС НАЙТИ?</a><br>
+			<a href="map.html button" class="button">КАК НАС НАЙТИ?</a><br>
 			ТЕЛЕФОН: +7 (495) 666-02-66
 		</p>
 
@@ -163,22 +138,53 @@
 			<p class="socials__titel">ДАВАЙТЕ ДРУЖИТЬ!</p>
 			<ul class="socials__list">
 				<li class="socials__item">	
-						<a href="vk" class="socials__link">вконтакте</a>
+						<a href="vk" class="socials__link button"><img src="../assets/svg/vk.svg" alt="" class="socials__icon"> <span class="visually-hidden">вконтакте</span></a>
 				</li>
 				<li class="socials__item">
-					<a href="fb" class="socials__link">фейсбук</a>
+					<a href="fb" class="socials__link button"><img src="../assets/svg/facebook.svg" alt="" class="socials__icon"><span  class="visually-hidden">фейсбук</span></a>
 				</li>
 				<li class="socials__item">
-					<a href="inst" class="socials__link">инстраграм</a>
+					<a href="inst" class="socials__link button"><img src="../assets/svg/instagram.svg" alt="" class="socials__icon"><span  class="visually-hidden">инстраграм</span></a>
 				</li>
 			</ul>
 		</div>
 
 		<p class="footer__developer">
-			разработано: <span>dream design</span>
+			разработано: <button type="button" class="button">dream design</button>
 			</p>
 
 	</footer>
+
+	<section class="modal modal-login">
+		<h2 class="modal__title">Личный кабинет</h2>
+		<p>введите свой логин и пароль</p>
+		<form action="https://echo.htmlacademy.ru" method="post" class="login-form">
+			<p>
+				<label for="user-email" class="visually-hidden">лоигн</label>
+				<input id="user-email" class="user-email" name="login" type="email" placeholder="email@test.com">
+			</p>
+			<p>
+				<label for="user-passsword" class="visually-hidden">пароль</label>
+				<input id="user-passsword" class="user-passsword" name="password" type="password" placeholder="*******">
+			</p>
+			<p>
+					<label  class="checkbox-text">
+						<input type="checkbox" name="remember" class="login-checkbox">
+						<span class="checkbox-indicator"></span>
+						Запоните меня
+					</label>
+				<a href="lost-password.html button" class="restore">забыл пароль!</a>
+			</p> 
+			<button class="button" type="submit">войти</button>
+		</form>
+		<button class="modal-close" type="button">закрыть</button>
+	</section>
+
+	<section class="modal modal-map">
+		<h2 class="visually-hidden">как до нас добраться</h2>
+			<p><img src="../assets/image/map.png" alt="Офис по адрему ул. Садовая 146 " width="580" height="360" class="modal-map__map-img"></p>
+		<button class="modal-close" type="button">закрыть</button>
+	</section>
 		
 </body>
 </html>

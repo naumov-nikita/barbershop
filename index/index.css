@@ -1,0 +1,107 @@
+body {
+  background-color: #000;
+  background-image: url(image/Layer.jpg);
+  background-position: top centre;
+  background-repeat: no-repeat;
+}
+
+.logo-box {
+  display: flex;
+}
+
+.header__logo {
+  margin: 0 auto;
+}
+
+.index-column {
+  color: #000;
+  background-color: #f8f5f2;
+}
+
+.index-column h2 {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.features__list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.features__item {
+  text-align: center;
+  width: 33%;
+  margin: 0 15px;
+}
+.features__title {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.news__list {
+  list-style: none;
+}
+
+.news__time {
+  text-transform: none;
+}
+
+.gallery__container {
+  background-color: #ccc;
+  border: 7px solid #fff;
+}
+
+.form__input {
+  font: inherit;
+  background-color: transparent;
+  border: 2px solid #000;
+}
+
+.form__input:focus {
+  border-color: #663d15;
+}
+
+.modal {
+  color: #000;
+
+  background-color: #f8f3f0;
+}
+
+.modal__title {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.user-passsword,
+.user-email {
+  font: inherit;
+  color: #000;
+  text-transform: uppercase;
+
+  background-color: #f9f6f3;
+  border: 2px solid #000;
+}
+
+.login-form input:focus {
+  background-color: #663d15;
+}
+
+.login-checkbox:focus,
+.login-checkbox:hover {
+  color: #663d15;
+}
+
+.restore {
+  text-decoration: underline;
+  color: #000;
+}
+
+.restore:focus,
+.restore:hover {
+  text-decoration: none;
+}
+
+.modal-map__map-img {
+	object-fit: cover;
+}
