@@ -53,6 +53,11 @@ a {
   overflow: hidden;
 }
 
+.icon {
+  display: inline-block;
+  fill: currentColor;
+}
+
 .button {
   font: inherit;
 
@@ -72,6 +77,9 @@ a {
 }
 
 /* header */
+.header {
+  background-color: #000;
+}
 .container {
   margin: 0 auto;
   max-width: 940px;
@@ -117,20 +125,76 @@ a {
 }
 
 /* footer */
+/* .header-container {
+	background-color: #000;
+} */
 .footer {
-  color: #fff;
+  background-color: #212121;
+}
 
+.footer-container {
+  max-width: 940px;
+  min-height: 190px;
+  margin: 0 auto;
+  padding-top: 60px;
+
+  display: flex;
+  align-items: flex-start;
+
+  color: #fff;
   background-color: #212121;
 }
 
 .socials {
+  width: 140px;
+
   text-align: center;
+  margin-left: 90px;
 }
 
 .socials__list {
+  display: flex;
+  justify-content: space-between;
   list-style: none;
+  padding: 0px;
 }
 
+.socials__item a {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  color: white;
+}
+
+.socials__item a:hover,
+.socials__item a:active {
+  background-color: #fff;
+  color: #000;
+}
+
+
 .footer__developer {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+
   text-align: center;
+}
+.footer__developer span {
+	margin-bottom: 14px;
+}
+
+.footer__developer button {
+  width: 140px;
+  height: 45px;
+  background-color: #000;
+  color: #fff;
+
+}
+
+.footer__developer .button:hover,
+.footer__developer .button:active {
+  background-color: #fff;
+  color: #000;
 }
