@@ -53,12 +53,11 @@ a {
   overflow: hidden;
 }
 
-.icon {
-  display: inline-block;
-  fill: currentColor;
-}
-
 .button {
+  display: inline-block;
+  padding: 10px 30px;
+  margin-right: 16px;
+
   font: inherit;
 
   text-align: center;
@@ -84,7 +83,7 @@ a {
   margin: 0 auto;
   max-width: 940px;
 
-  min-height: 70px;
+  /* min-height: 70px;*/
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -100,20 +99,59 @@ a {
 }
 
 .nav__list {
-  min-width: 480px;
+  min-width: 620px;
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
 
   padding-left: 0px;
+  margin: 0px;
   list-style: none;
 }
 
-.header__login {
+.header__login-link {
+  position: relative;
+  display: block;
+
+  padding: 20px 25px;
   margin-right: 20px;
+  padding-left: 40px;
+
+  font-size: 16px;
+  line-height: 20px;
+}
+.header__login-link:hover,
+.header__login-link:focus,
+.header__login-link:active {
+  background-color: #242424;
+}
+
+.header__login-link::before {
+  content: '';
+
+  position: absolute;
+  top: 22px;
+  left: 14px;
+  width: 16px;
+  height: 16px;
+
+  background-image: url(../svg/login.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 0.3;
+}
+
+.header__login-link:hover::before,
+.header__login-link:focus::before,
+.header__login-link:active::before {
+  opacity: 1;
 }
 
 .nav__link,
 .header__login {
+  display: block;
+  padding: 20px 25px;
+
   color: #fff;
 }
 
@@ -125,9 +163,7 @@ a {
 }
 
 /* footer */
-/* .header-container {
-	background-color: #000;
-} */
+
 .footer {
   background-color: #212121;
 }
@@ -136,13 +172,30 @@ a {
   max-width: 940px;
   min-height: 190px;
   margin: 0 auto;
-  padding-top: 60px;
+  padding-top: 40px;
 
   display: flex;
   align-items: flex-start;
 
   color: #fff;
   background-color: #212121;
+}
+
+.map-link {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.map-link:hover,
+.map-link:active,
+.map-link:focus,
+.socials__item a:hover,
+.socials__item a:active,
+.footer__developer .dd-button:hover,
+.footer__developer .dd-button:active {
+  text-decoration: none;
+  color: #000;
+  background-color: #fff;
 }
 
 .socials {
@@ -164,15 +217,9 @@ a {
   place-items: center;
   width: 40px;
   height: 40px;
-  color: white;
+  background-color: #000;
+  color: #fff;
 }
-
-.socials__item a:hover,
-.socials__item a:active {
-  background-color: #fff;
-  color: #000;
-}
-
 
 .footer__developer {
   display: flex;
@@ -182,7 +229,7 @@ a {
   text-align: center;
 }
 .footer__developer span {
-	margin-bottom: 14px;
+  margin-bottom: 14px;
 }
 
 .footer__developer button {
@@ -190,11 +237,10 @@ a {
   height: 45px;
   background-color: #000;
   color: #fff;
-
+  margin-right: 0px;
 }
 
-.footer__developer .button:hover,
-.footer__developer .button:active {
-  background-color: #fff;
-  color: #000;
+.icon {
+  display: inline-block;
+  fill: currentColor;
 }
