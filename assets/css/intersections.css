@@ -108,12 +108,16 @@ a {
   list-style: none;
 }
 
+.logo {
+	height: 60px;
+}
+
 .header__login-link {
   position: relative;
   display: block;
 
   padding: 20px 25px;
-  margin-right: 20px;
+  margin-right: 0px;
   padding-left: 40px;
 
   font-size: 16px;
@@ -150,7 +154,7 @@ a {
 .nav__link,
 .header__login {
   display: block;
-  padding: 20px 25px;
+  padding: 20px 20px;
 
   color: #fff;
 }
@@ -172,6 +176,7 @@ a {
   max-width: 940px;
   min-height: 190px;
   margin: 0 auto;
+	margin-top: 40px;
   padding-top: 40px;
 
   display: flex;

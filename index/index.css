@@ -23,8 +23,8 @@ body {
   color: #000;
   background-color: #f8f5f2;
 
-	background-image: url(../assets/image/divider.png);
-	background-position: center;
+	background-image: url(../assets/image/divider.png), url(../assets/image/patern.png); 
+	background-position: center, 0 0;
 	background-repeat: no-repeat;
 }
 
