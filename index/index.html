@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,8 @@
 	<link rel="stylesheet" href="../assets/css/intersections.css">
 	<link rel="stylesheet" href="index.css">
 	<title>Barbershop</title>
-</head> 
+</head>
+
 <body>
 
 	<header class="header">
@@ -23,7 +25,7 @@
 				</ul>
 			</nav>
 			<a href="login.html" class="header__login-link button">вход</a>
-	</div>
+		</div>
 	</header>
 
 	<main class="main">
@@ -38,85 +40,95 @@
 			<ul class="features__list">
 				<li class="features__item">
 					<h3 class="features__title">быстро</h3>
-					<p class="features__text">МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</p>
+					<p class="features__text">МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ
+						ОБЛАДАТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</p>
 				</li>
 				<li class="features__item">
 					<h3 class="features__title">круто</h3>
-					<p class="features__text">ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ.МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО!ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.</p>
+					<p class="features__text">ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ.МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО!ВО
+						ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.</p>
 				</li>
 				<li class="features__item">
 					<h3 class="features__title">дорого</h3>
-					<p class="features__text">НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА 
+					<p class="features__text">НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ
+						ЦЕНА
 						НЕ ДАЕТ ОПРЕДЕЛЕННЫЙ СТАТУС?</p>
 				</li>
 			</ul>
+		</section>
+
+		<div class="index-column">
+			<section class="section-box news">
+				<h2>новости</h2>
+				<ul class="news__list">
+					<li class="news__item">
+						<p class="news__text">НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ
+							СТРИЖКИ</p>
+						<time datetime="2022-01-11" class="news__time">11 января</time>
+					</li>
+					<li class="news__item">
+						<p class="news__text">В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И
+							НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ</p>
+						<time datetime="2022-01-18" class="news__time">18 января</time>
+					</li>
+				</ul>
+				<a href="news.html" class="news__link button">все новости</a>
 			</section>
 
-			<div class="index-column">
-				<section class="section-box news">
-					<h2>новости</h2>
-					<ul class="news__list">
-						<li class="news__item">
-							<p class="news__text">НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ</p>
-							<time datetime="2022-01-11" class="news__time">11 января</time>
-						</li>
-						<li class="news__item">
-							<p class="news__text">В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ, ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ СТРОЙНЫЕ РЯДЫ</p>
-							<time datetime="2022-01-18" class="news__time">18 января</time>
-						</li>
-					</ul>
-					<a href="news.html" class="news__link button">все новости</a>
-				</section>
+			<section class="section-box gallery">
+				<h2>фотогалерея</h2>
+				<figure class="image__container">
+					<img src="../assets/image/gallery.jpg" width="328px" height="164px"
+						alt="помещение с двумя креслами для стрижки" class="gallery__image">
+				</figure>
+				<button type="button" class="gallery__prev button">назад</button>
+				<button type="button" class="gallery__next button">вперед</button>
+			</section>
+		</div>
 
-				<section class="section-box gallery">
-					<h2>фотогалерея</h2>
-					<figure class="image__container">
-						<img src="../assets/image/gallery.jpg" width="328px"	height="164px" alt="помещение с двумя креслами для стрижки" class="gallery__image">
-					</figure>
-					<button type="button" class="gallery__prev button">назад</button>
-					<button type="button" class="gallery__next button">вперед</button>
-				</section>
-			</div>
+		<div class="index-column">
+			<section class="section-box contact">
+				<h2 class="contact__title">контактная информация</h2>
+				<p class="contact__main-info">БАРБЕРШОП «БОРОДИНСКИЙ» <br>
+					АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8 <br>
+					ТЕЛЕФОН: +7 (495) 666-02-66</p>
+				<p class="contact__work-time">ВРЕМЯ РАБОТЫ: <br>
+					ПН—ПТ: С 10:00 ДО 22:00 <br>
+					СБ—ВС: С 10:00 ДО 19:00
+				</p>
+				<a href="map.html" class="contact__link button">как проехать</a>
+				<a href="contacts.html" class="contact__link button">обратная связь</a>
+			</section>
 
-			<div class="index-column">
-				<section class="section-box contact">
-					<h2 class="contact__title">контактная информация</h2>
-					<p class="contact__main-info">БАРБЕРШОП «БОРОДИНСКИЙ» <br>
-						АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8 <br>
-						ТЕЛЕФОН: +7 (495) 666-02-66</p>
-					<p class="contact__work-time">ВРЕМЯ РАБОТЫ: <br>
-						ПН—ПТ: С 10:00 ДО 22:00 <br>
-						СБ—ВС: С 10:00 ДО 19:00
+			<section class="section-box form">
+				<h2 class="form__title">записаться</h2>
+				<p class="form__intro">УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ
+					С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
+				<form action="https://echo.htmlacademy.ru" method="post" class="form__form">
+					<p class="form__item">
+						<label for="date" class="form__lable">дата</label> <input id="date" type="date" class="form__input"
+							name="date" value="2022-01-20">
 					</p>
-					<a href="map.html" class="contact__link button">как проехать</a>
-					<a href="contacts.html" class="contact__link button">обратная связь</a>
-				</section>
+					<p class="form__item">
+						<label for="time" class="form__lable">время</label> <input id="time" type="time" class="form__input"
+							name="time" value="15:30">
+					</p>
+					<p class="form__item">
+						<label for="name" class="form__lable">ваше имя</label> <input id="name" type="text" class="form__input"
+							name="name" value="" placeholder="john">
+					</p>
+					<p class="form__item">
+						<label for="tel" class="form__lable">телефон</label> <input id="tel" type="tel" class="form__input"
+							name="tel" value="" placeholder="8-943-245-24-52">
+					</p>
+					<button type="submit" class="button">отправить</button>
+				</form>
 
-				<section class="section-box form">
-					<h2 class="form__title">записаться</h2>
-					<p class="form__intro">УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ
-						С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
-					<form action="https://echo.htmlacademy.ru" method="post" class="form__form">
-						<p class="form__item">	
-							<label for="date" class="form__lable">дата</label> <input id="date" type="date" class="form__input" name="date" value="2022-01-20">
-						</p>
-						<p class="form__item">
-							<label for="time" class="form__lable">время</label> <input id="time" type="time" class="form__input" name="time" value="15:30">
-						</p>
-						<p class="form__item">
-							<label for="name" class="form__lable">ваше имя</label> <input id="name" type="text" class="form__input" name="name" value="" placeholder="john">
-						</p>
-						<p class="form__item">
-							<label for="tel" class="form__lable">телефон</label> <input id="tel" type="tel" class="form__input" name="tel" value="" placeholder="8-943-245-24-52">
-						</p>
-						<button type="submit" class="button">отправить</button>
-					</form>
-					
-				</section>
-			</div>
+			</section>
+		</div>
 
-			
-			
+
+
 	</main>
 	<footer class="footer">
 		<div class="footer-container">
@@ -129,55 +141,71 @@
 			<div class="footer__links socials">
 				<p class="socials__titel">ДАВАЙТЕ ДРУЖИТЬ!</p>
 				<ul class="socials__list">
-					<li class="socials__item">	
-							<a href="vk" class="socials__link"><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="27" height="15" viewBox="0 0 26.14 14.91"><path d="M26 13.47l-.09-.17a13.55 13.55 0 0 0-2.6-3q-.87-.83-1.1-1.12A1 1 0 0 1 22 8a10.27 10.27 0 0 1 1.22-1.78l.88-1.16q2.35-3.13 2-4L26 .94a.8.8 0 0 0-.4-.22 2.14 2.14 0 0 0-.87 0h-3.92a.51.51 0 0 0-.27 0h-.3a.6.6 0 0 0-.15.14.93.93 0 0 0-.14.24 22.22 22.22 0 0 1-1.46 3.06q-.5.84-.93 1.46a7 7 0 0 1-.71.91 4.94 4.94 0 0 1-.52.47q-.23.18-.35.15l-.23-.05a.9.9 0 0 1-.31-.33 1.49 1.49 0 0 1-.16-.53V1.6a3.14 3.14 0 0 0 0-.62 2.12 2.12 0 0 0-.14-.44.73.73 0 0 0-.28-.33 1.57 1.57 0 0 0-.46-.18A9 9 0 0 0 12.57 0a8.93 8.93 0 0 0-3.25.33 1.83 1.83 0 0 0-.52.41q-.25.3-.07.33a1.67 1.67 0 0 1 1.16.59l.08.16a2.6 2.6 0 0 1 .19.63 6.32 6.32 0 0 1 .12 1 10.59 10.59 0 0 1 0 1.7q-.07.71-.13 1.1a2.21 2.21 0 0 1-.18.64 2.69 2.69 0 0 1-.16.3l-.07.07a1 1 0 0 1-.37.07.86.86 0 0 1-.46-.19 3.27 3.27 0 0 1-.56-.52 7 7 0 0 1-.66-.93q-.37-.6-.76-1.42l-.22-.39q-.2-.38-.56-1.11t-.62-1.43A.9.9 0 0 0 5.2.9h-.07a.93.93 0 0 0-.22-.16A1.44 1.44 0 0 0 4.6.65L.87.68A1 1 0 0 0 .1.94L0 1a.44.44 0 0 0 0 .22 1.08 1.08 0 0 0 .08.37Q.9 3.53 1.86 5.31t1.66 2.87Q4.23 9.27 5 10.24t1 1.24l.37.41.34.33a8.06 8.06 0 0 0 1 .78 16.34 16.34 0 0 0 1.4.9 7.6 7.6 0 0 0 1.79.72 6.19 6.19 0 0 0 2 .22h1.57a1.08 1.08 0 0 0 .72-.3l.05-.07a.9.9 0 0 0 .1-.25 1.38 1.38 0 0 0 0-.37 4.48 4.48 0 0 1 .09-1.05 2.77 2.77 0 0 1 .23-.71 1.74 1.74 0 0 1 .29-.4 1.19 1.19 0 0 1 .23-.2h.11a.86.86 0 0 1 .77.21 4.52 4.52 0 0 1 .83.79q.39.47.93 1.05a6.41 6.41 0 0 0 1 .87l.27.16a3.31 3.31 0 0 0 .71.3 1.53 1.53 0 0 0 .76.07l3.48-.05a1.58 1.58 0 0 0 .8-.17.68.68 0 0 0 .34-.37 1.06 1.06 0 0 0 0-.46 1.71 1.71 0 0 0-.1-.36z"/></svg>  <span class="visually-hidden">вконтакте</span></a>
+					<li class="socials__item">
+						<a href="vk" class="socials__link"><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="27"
+								height="15" viewBox="0 0 26.14 14.91">
+								<path
+									d="M26 13.47l-.09-.17a13.55 13.55 0 0 0-2.6-3q-.87-.83-1.1-1.12A1 1 0 0 1 22 8a10.27 10.27 0 0 1 1.22-1.78l.88-1.16q2.35-3.13 2-4L26 .94a.8.8 0 0 0-.4-.22 2.14 2.14 0 0 0-.87 0h-3.92a.51.51 0 0 0-.27 0h-.3a.6.6 0 0 0-.15.14.93.93 0 0 0-.14.24 22.22 22.22 0 0 1-1.46 3.06q-.5.84-.93 1.46a7 7 0 0 1-.71.91 4.94 4.94 0 0 1-.52.47q-.23.18-.35.15l-.23-.05a.9.9 0 0 1-.31-.33 1.49 1.49 0 0 1-.16-.53V1.6a3.14 3.14 0 0 0 0-.62 2.12 2.12 0 0 0-.14-.44.73.73 0 0 0-.28-.33 1.57 1.57 0 0 0-.46-.18A9 9 0 0 0 12.57 0a8.93 8.93 0 0 0-3.25.33 1.83 1.83 0 0 0-.52.41q-.25.3-.07.33a1.67 1.67 0 0 1 1.16.59l.08.16a2.6 2.6 0 0 1 .19.63 6.32 6.32 0 0 1 .12 1 10.59 10.59 0 0 1 0 1.7q-.07.71-.13 1.1a2.21 2.21 0 0 1-.18.64 2.69 2.69 0 0 1-.16.3l-.07.07a1 1 0 0 1-.37.07.86.86 0 0 1-.46-.19 3.27 3.27 0 0 1-.56-.52 7 7 0 0 1-.66-.93q-.37-.6-.76-1.42l-.22-.39q-.2-.38-.56-1.11t-.62-1.43A.9.9 0 0 0 5.2.9h-.07a.93.93 0 0 0-.22-.16A1.44 1.44 0 0 0 4.6.65L.87.68A1 1 0 0 0 .1.94L0 1a.44.44 0 0 0 0 .22 1.08 1.08 0 0 0 .08.37Q.9 3.53 1.86 5.31t1.66 2.87Q4.23 9.27 5 10.24t1 1.24l.37.41.34.33a8.06 8.06 0 0 0 1 .78 16.34 16.34 0 0 0 1.4.9 7.6 7.6 0 0 0 1.79.72 6.19 6.19 0 0 0 2 .22h1.57a1.08 1.08 0 0 0 .72-.3l.05-.07a.9.9 0 0 0 .1-.25 1.38 1.38 0 0 0 0-.37 4.48 4.48 0 0 1 .09-1.05 2.77 2.77 0 0 1 .23-.71 1.74 1.74 0 0 1 .29-.4 1.19 1.19 0 0 1 .23-.2h.11a.86.86 0 0 1 .77.21 4.52 4.52 0 0 1 .83.79q.39.47.93 1.05a6.41 6.41 0 0 0 1 .87l.27.16a3.31 3.31 0 0 0 .71.3 1.53 1.53 0 0 0 .76.07l3.48-.05a1.58 1.58 0 0 0 .8-.17.68.68 0 0 0 .34-.37 1.06 1.06 0 0 0 0-.46 1.71 1.71 0 0 0-.1-.36z" />
+							</svg> <span class="visually-hidden">вконтакте</span></a>
 					</li>
 					<li class="socials__item">
-						<a href="fb" class="socials__link"><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="19" height="22" viewBox="0 0 10.15 21.74"><path d="M3.34 1.12A4.77 4.77 0 0 1 6.53 0h3.61v3.81H7.81a1.07 1.07 0 0 0-1.09.83v2.55h3.42c-.08 1.23-.24 2.45-.41 3.67h-3v10.87H2.21V10.86H0V7.21h2.19V3.66a3.83 3.83 0 0 1 1.15-2.54z" /></svg><span  class="visually-hidden">фейсбук</span></a>
+						<a href="fb" class="socials__link"><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="19"
+								height="22" viewBox="0 0 10.15 21.74">
+								<path
+									d="M3.34 1.12A4.77 4.77 0 0 1 6.53 0h3.61v3.81H7.81a1.07 1.07 0 0 0-1.09.83v2.55h3.42c-.08 1.23-.24 2.45-.41 3.67h-3v10.87H2.21V10.86H0V7.21h2.19V3.66a3.83 3.83 0 0 1 1.15-2.54z" />
+							</svg><span class="visually-hidden">фейсбук</span></a>
 					</li>
 					<li class="socials__item">
-						<a href="inst" class="socials__link"><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path d="M18 0H2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-8 6a4 4 0 1 1-4 4 4 4 0 0 1 4-4zM2.5 18a.47.47 0 0 1-.5-.5V9h2.1a3.4 3.4 0 0 0-.1 1 6 6 0 1 0 12 0 3.4 3.4 0 0 0-.1-1H18v8.5a.47.47 0 0 1-.5.5zM18 4.5a.47.47 0 0 1-.5.5h-2a.47.47 0 0 1-.5-.5v-2a.47.47 0 0 1 .5-.5h2a.47.47 0 0 1 .5.5z"/></svg><span  class="visually-hidden">инстраграм</span></a>
+						<a href="inst" class="socials__link"><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20"
+								height="20" viewBox="0 0 20 20">
+								<path
+									d="M18 0H2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-8 6a4 4 0 1 1-4 4 4 4 0 0 1 4-4zM2.5 18a.47.47 0 0 1-.5-.5V9h2.1a3.4 3.4 0 0 0-.1 1 6 6 0 1 0 12 0 3.4 3.4 0 0 0-.1-1H18v8.5a.47.47 0 0 1-.5.5zM18 4.5a.47.47 0 0 1-.5.5h-2a.47.47 0 0 1-.5-.5v-2a.47.47 0 0 1 .5-.5h2a.47.47 0 0 1 .5.5z" />
+							</svg><span class="visually-hidden">инстраграм</span></a>
 					</li>
 				</ul>
 			</div>
 			<p class="footer__developer">
 				<span>разработано:</span><button type="button" class="dd-button button">dream design</button>
-				</p>
+			</p>
 		</div>
 	</footer>
 
-	<section class="modal modal-login">
-		<h2 class="modal__title">Личный кабинет</h2>
-		<p>введите свой логин и пароль</p>
-		<form action="https://echo.htmlacademy.ru" method="post" class="login-form">
-			<p>
-				<label for="user-email" class="visually-hidden">лоигн</label>
-				<input id="user-email" class="user-email" name="login" type="email" placeholder="email@test.com">
-			</p>
-			<p>
-				<label for="user-passsword" class="visually-hidden">пароль</label>
-				<input id="user-passsword" class="user-passsword" name="password" type="password" placeholder="*******">
-			</p>
-			<p>
-					<label  class="checkbox-text">
-						<input type="checkbox" name="remember" class="login-checkbox">
+	<section class="modal modal-login ">
+		<div class="modal-login__container">
+			<h2 class="modal-login__title">Личный кабинет</h2>
+			<p>введите свой логин и пароль</p>
+			<form action="https://echo.htmlacademy.ru" method="post" class="modal-login__form">
+				<p>
+					<label for="user-email" class="visually-hidden">лоигн</label>
+					<input id="user-email" class="modal-login__user-email" name="login" type="email" placeholder="email@test.com">
+				</p>
+				<p>
+					<label for="user-passsword" class="visually-hidden">пароль</label>
+					<input id="user-passsword" class="modal-login__user-passsword" name="password" type="password" placeholder="*******">
+				</p>
+				<p class="f-sb">
+					<label class="modal-login__checkbox">
+						<input class="login-checkbox checkbox-hidden" type="checkbox" name="remember" >
 						<span class="checkbox-indicator"></span>
 						Запоните меня
 					</label>
-				<a href="lost-password.html button" class="restore">забыл пароль!</a>
-			</p> 
-			<button class="button" type="submit">войти</button>
-		</form>
-		<button class="modal-close" type="button">закрыть</button>
+					<a href="lost-password.html" class="restore">забыл пароль!</a>
+				</p>
+				<button class="modal-login__btn button" type="submit">войти</button>
+			</form>
+			<button class="modal__close-btn" type="button"></button>
+		</div>
 	</section>
 
-	<section class="modal modal-map">
+	<section class="modal modal-map ">
 		<h2 class="visually-hidden">как до нас добраться</h2>
-			<p><img src="../assets/image/map.png" alt="Офис по адрему ул. Садовая 146 " width="580" height="360" class="modal-map__map-img"></p>
-		<button class="modal-close" type="button">закрыть</button>
+		<p class="modal-map__container"><img src="../assets/image/map.png" alt="Офис по адрему ул. Садовая 146 " width="580" height="345"
+				class="modal-map__map-img"></p>
+		<button class="modal__close-btn" type="button"></button>
 	</section>
-		
+
 	<script src="../assets/JS/script.js"></script>
 
 </body>
+
 </html>
