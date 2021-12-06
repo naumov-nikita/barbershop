@@ -12,16 +12,17 @@
 </head>
 
 <body>
-	<header class="header">
+	<header id="header" class="header">
 		<div class="container">
 			<nav class="nav">
 				<ul class="nav__list">
-					<li class="nav__item"><a href="#" class="nav__link"><img src="../assets/svg/logo.svg" alt=""></a></li>
-					<li class="nav__item"><a href="#" class="nav__link">информация</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">новости</a></li>
-					<li class="nav__item"><a href="price.html" class="nav__link">прайс-лист</a></li>
-					<li class="nav__item"><a href="shop.html" class="nav__link">магазин</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">контакты</a></li>
+					<li class="nav__item"><a href="../index/index.html" class="nav__link logo"><img src="../assets/svg/logo.svg"
+								alt=""></a></li>
+					<li class="nav__item"><a href="info.html" class="nav__link">информация</a></li>
+					<li class="nav__item"><a href="news.html" class="nav__link">новости</a></li>
+					<li class="nav__item nav__item--current"><a href="#header" class="nav__link">прайс-лист</a></li>
+					<li class="nav__item"><a href="../shop/shop.html" class="nav__link">магазин</a></li>
+					<li class="nav__item"><a href="contact.html" class="nav__link">контакты</a></li>
 				</ul>
 			</nav>
 			<a href="login.html" class="header__login-link button">вход</a>
@@ -30,61 +31,59 @@
 
 	<main class="price-list">
 
-		<h1 class="price-list__header">прайс лист</h1>
+		<h1 class="page-titel">прайс лист</h1>
 
-		<nav class="small-nav">
-			<ul class="small-nav__list">
-				<li class="small-nav__item">главная</li>
-				<li class="small-nav__item small-nav__item--current">прайс-лист</li>
-			</ul>
-		</nav>
+		<ul class="breadcrumbs">
+			<li class="breadcrumbs__item"><a href="../index/index.html" class="breadcrumbs__link">главная</a></li>
+			<li class="breadcrumbs__item breadcrumbs__item--current">прайс-лист</li>
+		</ul>
 
-		<div class=" decor">
-			<div class="decor__devider"><img role="none" src="../assets/svg/object.svg" alt="devider"></div>
-			<p class="decor__text">ИСТИННО МУЖСКАЯ КЛАССИКА</p>
-			<div class="decor__devider"><img role="none" src="../assets/svg/object.svg" alt="devider"></div>
+		<h2 class="big-heading">ИСТИННО МУЖСКАЯ КЛАССИКА</h2>
+
+		<div class="flex-row">
+
+			<section class="tools">
+				<h3 class="section-titel section-titel--after-heading">МЫ ИСПОЛЬЗУЕМ ТОЛЬКО <br> ЛУЧШИЕ СРЕДСТВА:</h3>
+
+				<ul class="tools__list">
+					<li class="tools__item">Baxter of California</li>
+					<li class="tools__item">Mr Natty</li>
+					<li class="tools__item">Suavecito</li>
+					<li class="tools__item">Malin+Goetz</li>
+				</ul>
+			</section>
+
+			<section class="price">
+				<h3 class="section-titel">ЦЕНЫ НА УСЛУГИ <br> НАШИХ  МАСТЕРОВ:</h3>
+				<table class="price__table">
+					<tr>
+						<td class="price__cell">СТРИЖКА</td>
+						<td class="price__cell">1500 ₽</td>
+					</tr>
+					<tr>
+						<td class="price__cell">СТРИЖКА БОРОДЫ</td>
+						<td class="price__cell">500 ₽</td>
+					</tr>
+					<tr>
+						<td class="price__cell">НАКРУТКА УСОВ</td>
+						<td class="price__cell">350 ₽</td>
+					</tr>
+				</table>
 		</div>
-
-		<section class="tools">
-			<h2 class="tools__titel">МЫ ИСПОЛЬЗУЕМ ТОЛЬКО ЛУЧШИЕ СРЕДСТВА:</h2>
-
-			<ul class="tools__list">
-				<li class="tools__item">Baxter of California</li>
-				<li class="tools__item">Mr Natty</li>
-				<li class="tools__item">Suavecito</li>
-				<li class="tools__item">Malin+Goetz</li>
-			</ul>
 		</section>
-
-		<section class="price">
-			<h2 class="price__title">ЦЕНЫ НА УСЛУГИНАШИХ МАСТЕРОВ:</h2>
-			<table class="price__table">
-				<tr class="price__row">
-					<td class="price__column">СТРИЖКА</td>
-					<td class="price__column">1500 ₽</td>
-				</tr>
-				<tr class="price__row">
-					<td class="price__column">СТРИЖКА БОРОДЫ</td>
-					<td class="price__column">500 ₽</td>
-				</tr>
-				<tr class="price__row">
-					<td class="price__column">НАКРУТКА УСОВ</td>
-					<td class="price__column">350 ₽</td>
-				</tr>
-			</table>
-		</section>
-
-		<section class="about">
-			<div class="about__left-column">
-				<p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это
-					уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
-			</div>
-			<div class="about__right-column">
-				<p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в
-					обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу чувствовать себя комфортно и
-					свободно!</p>
-			</div>
-		</section>
+		<div class="flex-row">
+			<section class="about">
+				<h3 class="section-titel">несколько слов о нас:</h3>
+				<div class="about__container">
+					<p class="about__text">Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это
+						уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
+			
+					<p class="about__text">Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в
+						обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу чувствовать себя комфортно и
+						свободно!</p>
+				</div>
+			</section>
+		</div>
 	</main>
 
 	<footer class="footer">
