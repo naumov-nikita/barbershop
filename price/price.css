@@ -93,9 +93,13 @@ body {
 }
 /* about */
 
+.about {
+	width: 100%;
+}
 .about__text {
   margin: 0;
-	padding-right: 45px;
+	/* padding-right: 45px; */
+	width: 460px;
 }
 
 /* layout */
@@ -104,11 +108,8 @@ body {
 	width: 460px;
 }
 
-.flex-row{
+.flex-row,
+.about__container{
 	display: flex;
 	justify-content: space-between;
-}
-
-.about__container {
-	display: flex;
 }

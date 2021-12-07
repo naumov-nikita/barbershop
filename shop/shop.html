@@ -17,11 +17,12 @@
 		<div class="container">
 			<nav class="nav">
 				<ul class="nav__list">
-					<li class="nav__item"><a href="#" class="nav__link logo"><img src="../assets/svg/logo.svg" alt=""></a></li>
+					<li class="nav__item"><a href="../index/index.html" class="nav__link logo"><img src="../assets/svg/logo.svg"
+								alt=""></a></li>
 					<li class="nav__item"><a href="#" class="nav__link">информация</a></li>
 					<li class="nav__item"><a href="#" class="nav__link">новости</a></li>
-					<li class="nav__item nav__item--current"><a href="price.html" class="nav__link">прайс-лист</a></li>
-					<li class="nav__item"><a href="shop.html" class="nav__link">магазин</a></li>
+					<li class="nav__item"><a href="../price/price.html" class="nav__link">прайс-лист</a></li>
+					<li class="nav__item nav__item--current"><a href="shop.html" class="nav__link">магазин</a></li>
 					<li class="nav__item"><a href="#" class="nav__link">контакты</a></li>
 				</ul>
 			</nav>
@@ -32,66 +33,70 @@
 	<main class="shop">
 		<h1 class="page-titel">средства для ухода</h1>
 
-		<nav class="small-nav">
-			<ul class="small-nav__list">
-				<li class="small-nav__item">главная</li>
-				<li class="small-nav__item">магазин</li>
-				<li class="small-nav__item small-nav__item--current">средства для ухода</li>
-			</ul>
-		</nav>
+		<ul class="breadcrumbs">
+			<li class="breadcrumbs__item"><a href="../index/index.html" class="breadcrumbs__link">главная</a></li>
+			<li class="breadcrumbs__item"><a href="../shop/shop.html" class="breadcrumbs__link">магазин</a></li>
+			<li class="breadcrumbs__item breadcrumbs__item--current">средства для ухода</li>
+		</ul>
 
-		<div class="wrapper">
-			<section class="filter">
-				<h2 class="viually-hidden">Фильтр товаров</h2>
+		<div class="main-container">
+
+			<section class="filter control-container">
+				<h2 class="visually-hidden">Фильтр товаров</h2>
+
 				<form class="filter__form" action="https://echo.htmlacademy.ru">
 					<fieldset class="filter__producers">
 						<legend class="filter__legend">ПРОИЗВОДИТЕЛИ:</legend>
 						<label class="filter__label">
 							<input class="filter__checkbox" type="checkbox" name="BaxterOfCalifornia" value="">
-							Baxter of California
+							<span class="custom-control"> Baxter of California</span>
 						</label>
 						<label class="filter__label">
 							<input class="filter__checkbox" type="checkbox" name="MrNatty" value="">
-							Mr Natty
+							<span class="custom-control"> Mr Natty</span>
 						</label>
 						<label class="filter__label">
 							<input class="filter__checkbox" type="checkbox" name="Suavecito" value="">
-							Suavecito
+							<span class="custom-control"> Suavecito</span>
 						</label>
 						<label class="filter__label">
 							<input class="filter__checkbox" type="checkbox" name="Malin+Goetz" value="">
-							Malin+Goetz
+							<span class="custom-control"> Malin+Goetz</span>
 						</label>
 						<label class="filter__label">
 							<input class="filter__checkbox" type="checkbox" name="Murray’s" value="">
-							Murray’s
+							<span class="custom-control"> Murray’s</span>
 						</label>
 						<label class="filter__label">
 							<input class="filter__checkbox" type="checkbox" name="AmericanCrew" value="">
-							American Crew
+							<span class="custom-control"> American Crew</span>
 						</label>
 					</fieldset>
+
 					<fieldset class="filter__product-groups">
 						<legend class="filter__legend">группы товаров:</legend>
 						<label class="filter__label">
 							<input class="filter__ratio" type="radio" name="product-group" value="shaving-supliance">
-							Бритвенные принадлежности
+							<span class="custom-ratio">Бритвенные принадлежности</span>
+
 						</label>
 						<label class="filter__label">
 							<input class="filter__ratio" type="radio" name="product-group" value="care">
-							средства для ухода
+							<span class="custom-ratio">средства для ухода</span>
+
 						</label>
 						<label class="filter__label">
 							<input class="filter__ratio" type="radio" name="product-group" value="accsessors">
-							аксессуары
+							<span class="custom-ratio">аксессуары</span>
+
 						</label>
 					</fieldset>
 					<button class="button" type="submit">показать</button>
 				</form>
 			</section>
 
-			<section class="product-card">
-				<h2 class="viually-hidden">Карточки товаров</h2>
+			<section class="product-card ">
+				<h2 class="visually-hidden">Карточки товаров</h2>
 				<div class="card">
 					<img class="card__img" src="../assets/image/baxter.png" alt="все для бритья">
 					<p class="cart_text">Набор для бритья «Baxter of California»</p>

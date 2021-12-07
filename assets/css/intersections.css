@@ -271,6 +271,7 @@ background-color: #fff;
 .breadcrumbs {
   display: flex;
   padding: 0;
+	margin-bottom: 40px;
 }
 .breadcrumbs__item {
   position: relative;

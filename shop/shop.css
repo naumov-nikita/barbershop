@@ -1,13 +1,136 @@
 body {
-	/* background-color: #000; */
-	color: #000;
-	background-image: url(../assets/image/patern.png);
-	background-position: 0 0;
+  /* background-color: #000; */
+  color: #000;
+  background-image: url(../assets/image/patern.png);
+  background-position: 0 0;
 }
 
 .shop {
-	width: 940px;
-	margin: 0 auto;
-	
-	
+  width: 940px;
+  margin: 0 auto;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter {
+  max-width: 170px;
+}
+
+.filter__producers,
+.filter__product-groups {
+  border: none;
+  margin: 20px 0;
+  padding: 0px;
+}
+.filter__legend {
+  margin-bottom: 10px;
+  font-size: 20px;
+  line-height: 24px;
+}
+.filter__label {
+  display: block;
+  margin: 10px 0;
+}
+
+/* Custom general */
+.filter__checkbox,
+.filter__ratio {
+  position: absolute;
+  appearance: none;
+}
+
+.filter__label {
+  display: flex;
+  align-items: center;
+}
+
+.custom-ratio,
+.custom-control {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.custom-control::before,
+.custom-ratio::before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 2px solid #000;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+}
+
+.filter__checkbox:disabled + .custom-control::before {
+  background-color: #717980;
+}
+
+/* Custom checkbox */
+.filter__checkbox:checked + .custom-control::before {
+  background-image: url(../assets/svg/bcross.svg);
+}
+/* стили при наведении курсора на радио */
+.filter__checkbox:not(:disabled):not(:checked) + .custom-control:hover::before {
+  border-color: #e4b283;
+}
+
+/* стили для активной радиокнопки (при нажатии на неё) */
+.filter__checkbox:not(:disabled):active + .custom-control::before {
+  background-color: rgb(227, 177, 130);
+  border-color: #e4b283;
+}
+
+/* стили для радиокнопки, находящейся в фокусе */
+.filter__checkbox:focus + .custom-control::before {
+  box-shadow: 0 0 0 0.2rem rgba(204, 119, 39, 0.25);
+}
+
+/* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+.filter__checkbox:focus:not(:checked) + .custom-control::before {
+  border-color: #e4b283;
+}
+
+/* Custom radio */
+.custom-ratio::before {
+  width: 0.8em;
+  height: 0.8em;
+  border: 3px solid #fbf8f5;
+  outline: 2px solid #000;
+  border-radius: 100%;
+}
+.filter__ratio:checked + .custom-ratio::before {
+  background-color: #000;
+}
+
+.filter__ratio:disabled + .custom-ratio::before {
+  background-color: #717980;
+  border: 3px solid #717980;
+}
+
+/* стили при наведении курсора на радио */
+.filter__ratio:not(:disabled):not(:checked) + .custom-ratio:hover::before {
+  border-color: #e4b283;
+}
+
+/* стили для активной радиокнопки (при нажатии на неё) */
+.filter__ratio:not(:disabled):active + .custom-ratio::before {
+  background-color: #e4b283;
+  border-color: #e4b283;
+}
+
+/* стили для радиокнопки, находящейся в фокусе */
+.filter__ratio:focus + .custom-ratio::before {
+  box-shadow: 0 0 0 0.2rem rgba(204, 119, 39, 0.25);
+}
+
+/* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+.filter__ratio:focus:not(:checked) + .custom-ratio::before {
+  border-color: rgba(165, 119, 76);
 }
