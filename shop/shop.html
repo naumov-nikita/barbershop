@@ -19,11 +19,11 @@
 				<ul class="nav__list">
 					<li class="nav__item"><a href="../index/index.html" class="nav__link logo"><img src="../assets/svg/logo.svg"
 								alt=""></a></li>
-					<li class="nav__item"><a href="#" class="nav__link">информация</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">новости</a></li>
+					<li class="nav__item"><a href="https://www.rbc.ru/short_news" class="nav__link">новости</a></li>
 					<li class="nav__item"><a href="../price/price.html" class="nav__link">прайс-лист</a></li>
 					<li class="nav__item nav__item--current"><a href="shop.html" class="nav__link">магазин</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">контакты</a></li>
+					<li class="nav__item"><a href="https://github.com/naumov-nikita?tab=repositories"
+							class="nav__link">контакты</a></li>
 				</ul>
 			</nav>
 			<a href="login.html" class="header__login-link button">вход</a>
@@ -97,11 +97,54 @@
 
 			<section class="product-card ">
 				<h2 class="visually-hidden">Карточки товаров</h2>
-				<div class="card">
-					<img class="card__img" src="../assets/image/baxter.png" alt="все для бритья">
-					<p class="cart_text">Набор для бритья «Baxter of California»</p>
-					<div class="card__price">3900 ₽</div>
-					<button class="card__button button">купить</button>
+
+				<div class="card-item">
+					<img class="card__img" src="../assets/image/shop/ac.png" alt="все для бритья">
+					<p class="cart_text">Набор для путешествия <br> «BAXTER OF CALLIFORNIA»</p>
+					<div class="card-container">
+						<div class="card__price">3900 ₽</div>
+						<button class="card__button button">купить</button>
+					</div>
+				</div>
+				<div class="card-item">
+					<img class="card__img" src="../assets/image/shop/baxter.png" alt="все для бритья">
+					<p class="cart_text">Набор для бритья <br> «BAXTER OF CALLIFORNIA»</p>
+					<div class="card-container">
+						<div class="card__price">3900 ₽</div>
+						<button class="card__button button">купить</button>
+					</div>
+				</div>
+				<div class="card-item">
+					<img class="card__img" src="../assets/image/shop/Layer30.png" alt="все для бритья">
+					<p class="cart_text">Набор для бритья <br> «BAXTER OF CALLIFORNIA»</p>
+					<div class="card-container">
+						<div class="card__price">3900 ₽</div>
+						<button class="card__button button">купить</button>
+					</div>
+				</div>
+				<div class="card-item">
+					<img class="card__img" src="../assets/image/shop/Layer32.png" alt="все для бритья">
+					<p class="cart_text">Набор для бритья <br> «BAXTER OF CALLIFORNIA»</p>
+					<div class="card-container">
+						<div class="card__price">3900 ₽</div>
+						<button class="card__button button">купить</button>
+					</div>
+				</div>
+				<div class="card-item">
+					<img class="card__img" src="../assets/image/shop/Layer38.png" alt="все для бритья">
+					<p class="cart_text">Набор для бритья <br> «BAXTER OF CALLIFORNIA»</p>
+					<div class="card-container">
+						<div class="card__price">3900 ₽</div>
+						<button class="card__button button">купить</button>
+					</div>
+				</div>
+				<div class="card-item">
+					<img class="card__img" src="../assets/image/shop/Layer39.png" alt="все для бритья">
+					<p class="cart_text">Набор для бритья <br> «BAXTER OF CALLIFORNIA»</p>
+					<div class="card-container">
+						<div class="card__price">3900 ₽</div>
+						<button class="card__button button">купить</button>
+					</div>
 				</div>
 			</section>
 		</div>
@@ -146,6 +189,44 @@
 			</p>
 		</div>
 	</footer>
+
+	<section class="modal modal-login is-hide">
+		<div class="modal-login__container">
+			<h2 class="modal-login__title">Личный кабинет</h2>
+			<p>введите свой логин и пароль</p>
+			<form action="https://echo.htmlacademy.ru" method="post" c lass="modal-login__form">
+				<p>
+					<label for="user-email" class="visually-hidden">лоигн</label>
+					<input id="user-email" class="modal-login__user-email" name="login" type="email" placeholder="email@test.com">
+				</p>
+				<p>
+					<label for="user-password" class="visually-hidden">пароль</label>
+					<input id="user-password" class="modal-login__user-passsword" name="password" type="password"
+						placeholder="*******">
+				</p>
+				<p class="f-aic">
+					<label class="modal-login__checkbox">
+						<input class="login-checkbox checkbox-hidden" type="checkbox" name="remember">
+						<span class="checkbox-indicator"></span>
+						Запоните меня
+					</label>
+					<a href="lost-password.html" class="restore">забыл пароль!</a>
+				</p>
+				<button class="modal-login__btn button" type="submit">войти</button>
+			</form>
+			<button class="modal__close-btn" type="button"></button>
+		</div>
+	</section>
+
+	<section class="modal modal-map is-hide">
+		<h2 class="visually-hidden">как до нас добраться</h2>
+		<iframe class="modal-map__container"
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d173294.9164063281!2d39.48757343429315!3d47.26092272473201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b9a8f82b0a17%3A0x97fae8b569c79a92!2z0J_QsNGA0Log0LjQvC4g0J7QutGC0Y_QsdGA0YzRgdC60L7QuSDQoNC10LLQvtC70Y7RhtC40Lg!5e0!3m2!1sru!2sru!4v1638887984610!5m2!1sru!2sru"
+			width="580" height="345" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+		<button class="modal__close-btn" type="button"></button>
+	</section>
+
+	<script src="../script-anmap.js"></script>
 
 </body>
 

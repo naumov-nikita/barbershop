@@ -9,8 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     mapTriggerFooter = document.querySelector('.map-link'),
     login = modalLogin.querySelector('#user-email'),
     password = modalLogin.querySelector('#user-password'),
-    loginForm = modalLogin.querySelector('form'),
-    mapTriggerInfo = document.querySelector('[data-mapTrigger]');
+    loginForm = modalLogin.querySelector('form');
 
   let storage = '',
     isStorageSupport = true;
@@ -42,11 +41,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
   openModalMap(mapTriggerFooter, modalMap);
-  openModalMap(mapTriggerInfo, modalMap);
 
   function closeModal(parrentElement, closeBtn) {
     closeBtn.addEventListener('click', () => {
-      parrentElement.classList.remove('is-hide');
+      parrentElement.classList.add('is-hide');
       modalLogin.classList.remove('modal-error');
     });
   }
@@ -60,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
       modalLogin.classList.remove('modal-error');
       void modalLogin.offsetWidth;
       modalLogin.classList.add('modal-error');
-			console.log(modalLogin.offsetWidth);
+      console.log(modalLogin.offsetWidth);
     } else if (isStorageSupport) {
       localStorage.setItem('user-login', login.value);
       alert('Вы вошли. Ваш логин сохранен');
@@ -71,13 +69,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener('keydown', (evt) => {
     if (evt.keyCode === 27) {
-      if (!modalLogin.classList.contains('is-hide')) {
+      if (!modalMap.classList.contains('is-hide')) {
+        evt.preventDefault();
+        modalMap.classList.add('is-hide');
+      } else if (!modalLogin.classList.contains('is-hide')) {
         evt.preventDefault();
         modalLogin.classList.add('is-hide');
         modalLogin.classList.remove('modal-error');
-      } else if (!modalMap.classList.contains('is-hide')) {
-        evt.preventDefault();
-        modalMap.classList.add('is-hide');
       }
     }
   });

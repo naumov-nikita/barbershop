@@ -11,9 +11,6 @@ body {
   margin-bottom: 75px;
 }
 
-
-/*  */
-
 .big-heading {
   display: flex;
   align-items: center;
@@ -50,8 +47,6 @@ body {
   line-height: 24px;
 }
 
-
-/*  */
 .tools__list {
   padding: 0;
   list-style: none;
@@ -76,7 +71,6 @@ body {
   transform: rotate(45deg);
 }
 
-/*  */
 .price__table {
   border-collapse: collapse;
   width: 100%;
@@ -91,25 +85,22 @@ body {
 .price__cell:last-child {
   text-align: center;
 }
-/* about */
 
 .about {
-	width: 100%;
+  width: 100%;
 }
 .about__text {
   margin: 0;
-	/* padding-right: 45px; */
-	width: 460px;
+  width: 460px;
 }
 
-/* layout */
-
-.tools, .price {
-	width: 460px;
+.tools,
+.price {
+  width: 460px;
 }
 
 .flex-row,
-.about__container{
-	display: flex;
-	justify-content: space-between;
+.about__container {
+  display: flex;
+  justify-content: space-between;
 }
