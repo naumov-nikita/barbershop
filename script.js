@@ -1,6 +1,7 @@
 'use strict';
 
 document.addEventListener('DOMContentLoaded', () => {
+  const mapTriggerInfo = document.querySelector('[data-mapTrigger]');
   const modalMap = document.querySelector('.modal-map'),
     modalLogin = document.querySelector('.modal-login'),
     mapCloseBtn = modalMap.querySelector('.modal__close-btn'),
@@ -10,8 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
     login = modalLogin.querySelector('#user-email'),
     password = modalLogin.querySelector('#user-password'),
     loginForm = modalLogin.querySelector('form');
-
-  const mapTriggerInfo = document.querySelector('[data-mapTrigger]');
 
   let storage = '',
     isStorageSupport = true;
@@ -81,5 +80,31 @@ document.addEventListener('DOMContentLoaded', () => {
         modalLogin.classList.remove('modal-error');
       }
     }
+  });
+
+  const sliderTrack = document.querySelector('.slider-track'),
+    prev = document.querySelector('.slider-prev'),
+    next = document.querySelector('.slider-next');
+
+  let offset = 0;
+
+  next.addEventListener('click', () => {
+    if (offset == 900) {
+      offset = 0;
+    } else {
+      offset += 300;
+    }
+
+    sliderTrack.style.transform = `translateX(${-offset}px)`;
+  });
+
+  prev.addEventListener('click', () => {
+    if (offset == 0) {
+      offset = 900;
+    } else {
+      offset -= 300;
+    }
+
+    sliderTrack.style.transform = `translateX(${-offset}px)`;
   });
 });
